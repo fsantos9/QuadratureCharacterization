@@ -1,4 +1,4 @@
-// constructing vectors
+// constructing vectors EQMoM
 #include <iostream>
 #include <vector>
 
