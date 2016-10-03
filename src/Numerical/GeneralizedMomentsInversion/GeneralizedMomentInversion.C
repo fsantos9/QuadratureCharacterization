@@ -17,16 +17,17 @@ Author
 
 
     extern "C"
-    {
+    {   /* This function calculates the recursion coeficient based on the moments */
         void dcheb_
                 (
                     int *, double *, double *, double *, double *, double *,
-                    scalar *, label *, double *, double *, double *, double *, double *
+                    double *, int *, double *, double *, double *, double *, double *
                 );
+        /* This function calculates the weights and abscissas based on the moments */
         void dgauss_
                 (
-                    label *, scalar *, scalar *, scalar *, scalar *, scalar *,
-                    label *, scalar *
+                    int *, double *, double *, double *, double *, double *,
+                    int *, double *
                 );
 
     }
@@ -37,13 +38,28 @@ GeneralizaedMomentInversion::GeneralizaedMomentInversion
   const vector<double>& GMom
 ):
   weights_(GMom.size()/2),
-  abs_
+  abs_(GMom.size()/2)
 {
 
+  register nMom = GMom.size();
+  register npt  = GMom.size()/2;
+
+
+  double  *moment  = new double[nMom];
+  double  *Weight  = new double[npt];
+  double  *Abs     = new double[npt];
 
 
 
+  dcheb_
+    (
+    int *, double *, double *, double *, double *, double *,
+    double *, int *, double *, double *, double *, double *, double *
+    );
 
 
+ delete [] moment;
+ delete [] Weight;
+ delete [] Abs;
 
 }
