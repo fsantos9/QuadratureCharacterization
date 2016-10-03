@@ -1,0 +1,6 @@
+/*Prototype for Numerical methods Classes*/
+
+// Prototype for Generalized moments invertions
+#include "../src/Numerical/GeneralizedMomentsInversion/GeneralizedMomentInversion.H"
+// Prototype for NonLinear Solver
+#include "../src/Numerical/GeneralizedMomentsInversion/GeneralizedMomentInversion.H"

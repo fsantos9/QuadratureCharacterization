@@ -20,8 +20,8 @@ Author
     {
         void dcheb_
                 (
-                    int *, double *, double *, double *, double *, double *,
-                    scalar *, label *, double *, double *, double *, double *, double *
+                    label *, scalar *, scalar *, scalar *, scalar *, scalar *,
+                    scalar *, label *, scalar *, scalar *, scalar *, scalar *, scalar *
                 );
         void dgauss_
                 (

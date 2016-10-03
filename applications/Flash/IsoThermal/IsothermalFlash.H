@@ -1,0 +1,55 @@
+#ifndef IsothermalFlash_H
+#define IsothermalFlash_H
+
+//* C++ prototypes *//
+
+//IO
+#include <iostream>
+//Vector class to use smart pointer
+#include <vector>
+
+
+/*Prototype for Numerical methods Classes*/
+// Prototype for Generalized moments invertions
+#include "../src/Numerical/GeneralizedMomentsInversion/GeneralizedMomentInversion.H"
+// Prototype for NonLinear Solver
+#include "../src/Numerical/NonLinearSolver/NewtonMethod.H"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#endif
+
+
