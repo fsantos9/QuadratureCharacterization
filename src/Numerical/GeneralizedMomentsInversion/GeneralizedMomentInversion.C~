@@ -51,6 +51,13 @@ GeneralizaedMomentInversion::GeneralizaedMomentInversion
 
 
 
+  dcheb_
+    (
+    int *, double *, double *, double *, double *, double *,
+    double *, int *, double *, double *, double *, double *, double *
+    );
+
+
  delete [] moment;
  delete [] Weight;
  delete [] Abs;
